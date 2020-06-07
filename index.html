@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ウェブカツ!!レスポンシブデザインページ</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./reset.css">
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="js-float-menu">
+     <div class="header-contents ">
+            <div class="header-left">
+            <h1 class="title">Responsive Design</h1>
+            </div>
+            <!--smartphpne用のメニューバーなので一旦保留。全て終わった後に記述する-->
+            <div class="menu-trigger js-toggle-sp-menu">
+                <!--ハンバーガーメニューのやつ-->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!--ここまで-->
+            <div class="header-right">
+                <nav class="nav-menu js-toggle-sp-menu-target">
+                    <ul class="menu">
+                        <li class="menu-item"><a class="menu-link" href="">TOP</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#NEWS">NEWS</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#ABOUT">ABOUT</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#STAFF">STAFF</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#COURCE">COURSE</a></li>
+                        <li class="menu-item"><a class="menu-link" href="#CONTACT">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+     </div>
+     <div class="clear"></div>
+    </header>
+    <!--見本のhtmlを見て追加する点
+    　　　1.各セクションではid属性でセクション名を追記している。どんなことに使用しているかは後ほど確認する。
+         2.セクション名はh2だけではなく、中にspanタグも追加している。-->
+    <main>
+        <section class="one hero container-fluid js-float-menu-target"><!--backubround-imageはここに書く-->
+            <h1 class="container-title">L.I.F.E 　<br>Is So Good</h1>
+        </section>   
+            
+      
+        <!-------------------------------------------------------------------------->
+        <section class="two" id="NEWS">
+            <h2 class="container-title"><span>NEWS</span></h2>
+            <div class="contents">
+                <ul class="news">
+                    <li>
+                      <a class="news-link">
+                         <span class="news-date">2019.12.31</span>
+                         <span class="news-title">サンプルNEWSサンプルNEWSサンプルNEWS</span>
+                      </a>  
+                    </li>
+                    <li>
+                      <a class="news-link">
+                         <span class="news-date">2019.12.31</span>
+                         <span class="news-title">サンプルNEWSサンプルNEWSサンプルNEWS</span>
+                      </a>
+                    </li>
+                    <li>
+                     <a class="news-link">
+                         <span class="news-date">2019.12.31</span>
+                         <span class="news-title">サンプルNEWSサンプルNEWSサンプルNEWS</span>
+                     </a>
+                    </li>
+                    <li>
+                     <a class="news-link">
+                         <span class="news-date">2019.12.31</span>
+                         <span class="news-title">サンプルNEWSサンプルNEWSサンプルNEWS</span>
+                      </a>
+                    </li>
+
+                    
+                </ul>
+            </div>
+        </section>
+        <!-------------------------------------------------------------------------->
+        <section class="three" id="ABOUT">
+            <div class="contents-area">
+             <h2 class="container-title"><span>ABOUT</span></h2>
+             <div class="contents articale">
+                <p>レスポンシブWebデザインとは、どんな大きさの画面でも見やすく、使いやすいWebサイトにするために必要なものです。<br>
+                1つのHTML（Webサイトに載せる情報）で配信し、CSS（情報の大きさや位置など表示の指定）はデバイスごとに用意して表示を変えさせます。
+                内容は全て同じですが見せ方が違うということです。HTMLが１つなのでWebサイトに載せる情報を修正や更新する時に作業が1回で済みます。 デバイスごとにHTMLがあると修正や更新の作業をHTMLの数だけしなくてはなりません。
+                スマホに対応したWebサイトが検索結果の上位に表示されやすくなる「モバイルフレンドリー」や、スマホ用のページが順位の決め手になる「モバイルファーストインデックス」に対応できます。
+                </p>
+             </div>
+            </div> 
+        </section>
+        <!-------------------------------------------------------------------------->
+        <!--答え合わせ：section fourのcontentsではたくさんdivタグで囲っていたり、class nameが多かったりする。
+            一旦何もつけないでscssを見直した時に必要であればclass　nameを追加する。
+            CSS設計の仕方は後で習うから今はあまり気にしなくていいかも-->
+        <section class="four" id="STAFF">
+            <h2 class="container-title"><span>STAFF</span></h2>
+            <div class="contents">
+                <div class="photos"><img  src="./imgs/danang1.jpeg" alt=""></div>
+                <div class="photos"><img  src="./imgs/danang2.jpeg" alt=""></div>
+                <div class="photos"><img  src="./imgs/danang3.jpeg" alt=""></div>
+                <div class="photos"><img  src="./imgs/danang4.jpeg" alt=""></div>
+                <div class="photos"><img  src="./imgs/hoian1.jpeg" alt=""></div>
+                <div class="photos"><img  src="./imgs/hoian2.jpeg" alt=""></div>
+                <div class="photos"><img  src="./imgs/staff1.jpg" alt=""></div>
+                <div class="photos"><img  src="./imgs/staff2.jpeg" alt=""></div>
+            </div>
+        </section>
+        <!-------------------------------------------------------------------------->
+        <section class="five" id="COURCE">
+            <h2 class="container-title"><span>COURCE</span></h2>
+            <div class="contents">
+               <!--サンプルの方だとcontentsの下層にもう一つdivタグを作っている-->
+               <!--<div class="panel-group panel-group-flex"></div>--> 
+               <!--sampelではコース名、img,概要を一つ一つのdivでカテゴリ分けしている。-->
+               <!--divタグに直接文字を記入してもいいの？-->
+                <div class="lesson">
+                   <div class="lesson-image">
+                     <p class="lesson-title">Business<span>コース</span></p>
+                     <img class="lesson-img" src="./imgs/price1.jpg" alt="">
+                   </div> 
+                   <p class="lesson-sentense">多色使いで髪に立体的な表情が生まれ必要な部分にカラーリングを施すので髪全体の負担が少なくなります。ハイライト、又はローライトなどが含まれます。</p>
+                </div>
+                <div class="lesson osusume">
+                    <span class="panel-badge">オス<br>スメ</span>
+                    <div class="lesson-image">
+                     <p class="lesson-title">Advance<span>コース</span></p>
+                     <img class="lesson-img" src="./imgs/price2.jpg" alt="">
+                    </div>
+                    <p class="lesson-sentense">髪に水分をたっぷり保ちながらぷるんとした自然な仕上がりのデジタルパーマです。低温でロットを巻くので髪へのダメージを最小限に抑えられ、まとまりのある髪になります。</p>
+                   
+                </div>
+                <div class="lesson">
+                    <div class="lesson-image">
+                     <p class="lesson-title">Beginners<span>コース</span></p>
+                     <img class="lesson-img" src="./imgs/price3.jpg" alt="">
+                    </div>
+                    <p class="lesson-sentense">綺麗な髪はまず頭皮から。毛穴の詰まりを除去したり、頭皮のトリートメントで健康な髪と頭皮に。</p>
+                </div>
+            </div>
+        </section>
+        <!-------------------------------------------------------------------------->
+        <!--送信ボタンはinputタグなのかbuttonタグなのかいまいちわからない。-->
+        <section class="six" id="CONTACT">
+            <h2 class="container-title"><span>CONTACT</span></h2>
+            <div class="contact-contents contents">
+             <form class="naiyo" action="">  
+              <input type="text" placeholder="お名前">
+              <input type="text" placeholder="email">
+              <textarea name="" placeholder="お問い合わせ内容"></textarea>
+              <input class="submit" type="submit" value="送信">
+            </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="cotents">
+            <!--sampleではここではpタグ使ってら。-->
+            Copyright © webukatu. All Rights Reserved
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html> 
